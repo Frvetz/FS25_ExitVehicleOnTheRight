@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="93">
+    <title>
+        <de>Fahrzeug rechts verlassen</de>
+        <en>Exit vehicle on the right</en>
+    </title>
+    <description>
+        <de>
+<![CDATA[Mit diesem Mod können Sie Ihr Fahrzeug nun auf beiden Seiten verlassen.
+
+-Standardmäßige Tastenkombination: L-Shift + E
+
+-Multiplayer kompatibel
+    ]]>
+	</de>
+	<en>
+<![CDATA[With this mod, you can now exit your vehicle on both sides.
+
+-Default key combination: L-Shift + E
+
+-Multiplayer compatible
+    ]]>	
+	</en>
+    </description>
+    <author>gerrit</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon_ExitVehicleOnTheRight.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+		<sourceFile filename="registerExitVehicleOnTheRight.lua" />
+    </extraSourceFiles>
+
+    <actions>
+       <action name="EXIT_RIGHT"/>
+    </actions>
+	
+	<inputBinding>
+        <actionBinding action="EXIT_RIGHT">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_e"/>
+        </actionBinding>
+    </inputBinding>
+
+    <l10n>
+		<text name="EXIT_RIGHT"><de>Fahrzeug rechts verlassen</de><en>Exit vehicle on the right</en></text>
+	</l10n>
+</modDesc>
